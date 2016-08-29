@@ -1,0 +1,367 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Website Title & Description for Search Engine purposes -->
+  <title>My First Webpage</title>
+  <meta name="description" content="">
+  <!-- Mobile viewport optimized -->
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link href="css/bootstrap-glyphicons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+  	<!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <!-- Include Modernizr in the head, before any other Javascript -->
+  <script src="js/modernizr-2.6.2.min.js"></script>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  </head>
+<body>
+  <div class="container" id="main">
+    <div class="navbar navbar-fixed-top">
+       <div class="container">
+         	<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+         <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+          <a class="navbar-brand" href="/">
+        <img src="images/small_logo.png" alt="My logo" height="50px"/></a>
+        <div class="nav-collapse collapse navbar-responsive-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="#">Home</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<strong class="caret"></strong></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Science</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+                <li class="divider">
+                  <li class="dropdown-header">More Information</li>
+                  <li>
+                    <a href="#">Conservation</a>
+                  </li>
+                  <li>
+                    <a href="#">Education</a>
+                  </li>
+                  <li>
+                    <a href="#">Videos</a>
+                  </li>
+                </li>
+              </ul><!-- end dropdown-menu -->
+            </li>
+          </ul>
+          <form class="navbar-form pull-left">
+            <input type="text" class="form-control" placeholder="search" id="search">
+            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+          </form><!-- end navbar-form -->
+          <ul class="nav navbar-nav pull-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Account <strong class="caret"></strong></a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
+                </li>
+
+                <li>
+                  <a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile</a>
+                </li>
+
+                <li>
+                  <a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a>
+                </li>
+
+                <li class="divider"></li>
+
+                <li>
+                  <a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
+                </li>
+              </li>
+              </ul>
+            </li>
+
+          </ul><!-- end nav pull-right -->
+        </div><!-- end nav-collapse -->
+  </div><!-- end container -->
+</div><!-- end navbar -->
+
+  <div class="carousel slide" id="myCarousel">
+    <!--Indicators -->
+    <ol class="carousel-indicators">
+      <li class="active" data-slide-to="0" data-target="#myCarousel">
+      </li>
+      <li data-slide-to="1" data-target="#myCarousel">
+      </li>
+      <li data-slide-to="2" data-target="#myCarousel">
+      </li>
+      </ol>
+
+    <div class="carousel-inner">
+      <div class="item active" id="slide1">
+        <div class="carousel-caption">
+          <h4>Conservation</h4>
+          <p>Engaging in various site-specific issues across india.</p>
+      </div><!-- end carousel caption -->
+  </div><!-- end carousel item -->
+  <div class="item" id="slide2">
+    <div class="carousel-caption">
+      <h4>Science</h4>
+      <p>Pathbreaking research in inida</p>
+  </div><!-- end carousel caption -->
+</div><!-- end carousel item -->
+<div class="item" id="slide3">
+  <div class="carousel-caption">
+    <h4>Slogan</h4>
+    <p>Protect Wildlife.Protect Mother Earth</p>
+</div><!-- end carousel caption -->
+</div><!-- end carousel item -->
+</div> <!-- end carousel inner -->
+<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev">
+</span></a>
+<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next">
+</span></a>
+</div><!-- end myCarousel -->
+
+<div class="row" id="bigCallout">
+	<div class="col-12">
+
+		<div class="alert alert-success alert-block fade in" id="successAlert">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+
+			<h4>Success!</h4>
+			<p>You just made this element display by using jQuery. Click the "x" in the top right corner to close this bad boy.</p>
+		</div><!-- end alert -->
+
+		<!-- Visible only on small devices -->
+		<div class="well well-small visible-sm">
+			<a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span> Give us a call!</a>
+		</div><!-- end well-small -->
+
+		<div class="well">
+			<div class="page-header">
+				<h1>A Fancy Header <small>A subheader for extra awesome.</small></h1>
+			</div><!-- end page-header -->
+
+			<p class="lead">Some solid leading copy will help get your users engaged. Use this area to come up with something real nice. Know what I'm sayin?</p>
+
+			<a href="" class="btn btn-large btn-primary" id="alertMe">Click a nice big button</a>
+			<a href="" class="btn btn-large btn-link">or a secondary link</a>
+		</div><!-- end well -->
+
+	</div><!-- end col-12 -->
+</div><!-- end bigCallout -->
+
+<div class="row" id="featuresHeading">
+	<div class="col-12">
+		<h2>More Features</h2>
+		<p class="lead">Saving nature is at the very heart of what we do as WWF.</p>
+	</div><!-- end col-12 -->
+</div><!-- end featuresHeading -->
+
+<div class="row" id="features">
+  <div class="col-sm-4 feature">
+    <div class="panel">
+      <div class="panel-heading">
+        <h3 class="panel-title">OverView</h3>
+      </div><!-- end panelheading -->
+      <img src="images/logo_01.jpg" alt="My Logo">
+      <p>We apply rigorous field-based science to save wildlife and wild lands and use science to plan, implement and measure the successes of our conservation projects.</p>
+      <a href="http://www.google.com" target="_blank" class="btn btn-warning btn-block">Click</a>
+    </div><!-- end panel -->
+  </div><!-- end feature -->
+
+  <div class="col-sm-4 feature">
+    <div class="panel">
+      <div class="panel-heading">
+        <h3 class="panel-title">Features</h3>
+      </div><!-- end panelheading -->
+      <img src="images/logo_02.jpg" alt="My Logo"/>
+      <p>We believe that conservation must involve a commitment to preserving species and landscapes and inspire people to care deeply and act effectively.
+     conservation</p>
+      <a href="http://www.google.com" target="_blank" class="btn btn-danger btn-block">Click</a>
+    </div><!-- end panel -->
+  </div><!-- end feature -->
+  <div class="col-sm-4 feature">
+    <div class="panel">
+      <div class="panel-heading">
+        <h3 class="panel-title">More Info</h3>
+      </div><!-- end panel heading -->
+      <img src="images/logo_03.jpg" alt="My Logo"/>
+        <p>We build local capacity by training scientists who study wildlife, professionals who manage wild lands, inspiring youth and village communities.</p>
+      <a href="http://www.google.com" target="_blank" class="btn btn-info btn-block">Click</a>
+    </div><!-- end panel -->
+  </div><!-- end feature -->
+</div><!-- end features -->
+</div>
+
+<div class="jumbotron">
+  <h1>Wildlife Conservation</h1>
+  <p>Wildlife Conservation is the practice of protecting wild plant and animal species and their habitats. The goal of wildlife conservation is to ensure that nature will be around for future generations to enjoy and also to recognize the importance of wildlife and wilderness for humans and other species alike.
+</p>
+  <a class="btn btn-primary btn-large">Learn More</a>
+</div><!-- end of jumbotron -->
+
+<div class="container">
+<div class="row" id="moreInfo">
+  <div class="col-sm-6">
+  <h3>New Tabbable Content</h3>
+  <div class="tabbable">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#tab1" data-toggle="tab">section1</a></li>
+        <li><a href="#tab2" data-toggle="tab">section2</a></li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane active" id="tab1">
+        <h4><span class="glyphicon glyphicon-map-marker"></span>Our Location<small>This is something new</small>
+        </h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62226.94878712883!2d77.61015389111843!3d12.895867860178345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1swipro!5e0!3m2!1sen!2sin!4v1472187062169" width="100%" height="200px" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <p>WWF will secure public support, US funding, political leadership and technical excellence to conserve priority species and recover their populations. Doubling the number of wild tigers by 2022 is among the most ambitious commitment WWF has made because we believe that by saving this Asian big cat, we will also succeed in saving large swathes of Asia’s forests and vital freshwater sources, allowing both nature and people to thrive. We also focus on the intersection of snow leopard conservation with climate adaptation and water security in Asia's High Mountains.
+        </p>
+        <p>WWF will secure public support, US funding, political leadership and technical excellence to conserve priority species and recover their populations. Doubling the number of wild tigers by 2022 is among the most ambitious commitment WWF has made because we believe that by saving this Asian big cat, we will also succeed in saving large swathes of Asia’s forests and vital freshwater sources, allowing both nature and people to thrive. We also focus on the intersection of snow leopard conservation with climate adaptation and water security in Asia's High Mountains.
+</p>
+      </div><!-- end tab-pane -->
+      <div class="tab-pane" id="tab2">
+        <h4>A Floated Picture<small>Use placeholder.it</small></h4>
+        <img src="images/HTMLlogo.png" class="thumbnail pull-left">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <hr>
+        <a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>Click a Modal Window</a>
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">A modal title</h4>
+              </div><!-- end modal header -->
+
+              <div class="modal-body">
+                <h4>Text in a modal</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <h4>popovers in a modal</h4>
+                <a href="#" class="btn btn-danger">Dont click this button</a>
+                <h4>tooltips in a  modal</h4>
+                <a href="#">This Link</a>should have a title and so <a href="#">this one</a>
+                <hr>
+                <p><small class="text-muted">This link doesnt response</small></p>
+
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label class="col-lg-2 control-label"  for="inputName">Name</label>
+                    <div class="col-lg-10">
+                      <input class="form-control" id="inputName" placeholder="Name" type="text">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-lg-2 control-label"  for="inputEmail">Email</label>
+                    <div class="col-lg-10">
+                      <input class="form-control" id="inputEmail" placeholder="Email" type="email">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-lg-2 control-label"  for="inputAddress">Address</label>
+                    <div class="col-lg-10">
+                    <textarea class="form-control" id="inputAddress" placeholder="Address" rows="3"></textarea>
+                    <button class="btn btn-success pull-right" type="button">send</button>
+                    </div>
+                  </div>
+                  </form>
+              </div><!-- end modal body -->
+
+              <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal" type="button">close</button>
+                <button class="btn btn-primary" type="button">Save Changes</button>
+                </div><!-- end modal-footer -->
+          </div><!-- end modal-content -->
+        </div><!-- end modal-dialog -->
+      </div><!-- end myModal -->
+
+    </div><!-- end tab-pane -->
+  </div><!-- end tab-content -->
+</div><!-- end tabbable -->
+</div><!-- end col-sm-6 -->
+
+<div class="col-sm-6">
+  <h3>Some Text Info</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <h4>A list group</h4>
+
+  <div class="list-group">
+    <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading">Kale</h4>
+      <p class="list-group-item-text">I dont like kale</p>
+    </a>
+    <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading">Kale</h4>
+      <p class="list-group-item-text">I dont like kale</p>
+    </a>
+    <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading">Kale</h4>
+      <p class="list-group-item-text">I dont like kale</p>
+    </a>
+  </div><!-- list group -->
+  <h5>A small heading</h5>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+</div><!-- end col-sm-6 -->
+</div><!-- end moreInfo -->
+</div><!-- end main container -->
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">
+        <h6>Copyright &copy; 2013 {WWF}</h6>
+      </div><!-- end col-sm-2 -->
+
+      <div class="col-sm-4">
+        <h6>About us</h6>
+        <p>The world is dealing with
+          <br> an unprecedented spike in wildlife crime.
+        </p>
+      </div><!-- end col-sm-4 -->
+
+      <div class="col-sm-2">
+        <h6>Navigation</h6>
+        <ul class="unstyled">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </div><!-- end col-sm-2 -->
+
+      <div class="col-sm-2">
+        <h6>Follow Us</h6>
+        <ul class="unstyled">
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+        </ul>
+      </div><!-- end col-sm-2 -->
+
+      <div class="col-sm-2">
+        <h6>coded with<span class="glyphicon glyphicon-heart"></span></h6>
+      </div><!-- end col-sm-2 -->
+    </div><!-- end row -->
+  </div><!-- end container -->
+</footer>
+</body>
+</html>
